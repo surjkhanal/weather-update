@@ -31,7 +31,7 @@ function manageImgSrc(data){
         result+="fog-day--v2"
         break;
         case 'Mist': 
-        result+="external-mist-natural-disaster-photo3ideastudio-flat-photo3ideastudio"
+        return "https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/80/000000/external-mist-natural-disaster-photo3ideastudio-flat-photo3ideastudio.png"
         break;
         case 'Thunderstorm': 
         result+="storm"
