@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <span id="back-btn"></span>
+            <span> Weather App </span>
+
+        </nav>
+        <section id="city-selection">
+            <form id="city-form" class="asd">
+                <div>
+                    <input type="radio" name="unit" id="cel" checked value="cel">
+                    <label for="cel">&#8451;</label>
+                    <input type="radio" name="unit" id="far" value="far">
+                    <label for="far">&#8457;</label>
+                </div>
+                <input type="text" name="city" placeholder="Enter city">
+                <input type="submit" value="Go">
+            </form>
+            <h2 id="selected-city" class="hidden"></h2>
+
+        </section>
+        <section id="city-info" class="hidden">
+            <img src="https://img.icons8.com/office/100/000000/partly-cloudy-night--v2.png" />
+            <h1>
+            </h1>
+            <p></p>
+            <div id="extra">
+                <div id="left">
+                    <span>
+                        <span class="metrics"></span>
+                        <br>
+                        <span class="metrics-label">Feels Like</span>
+                    </span>
+                </div>
+                <div id="right">
+                    <span>
+                        <span class="metrics"></span>
+                        <br>
+                        <span class="metrics-label">humidity</span>
+                    </span>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+</body>
+
+</html>

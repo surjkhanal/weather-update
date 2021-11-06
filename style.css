@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height:100vh;
+    font-size: 62.5%;
+    background-color:#3F3351;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    display: none!important;
+}
+main {
+    background-color:#87AAAA;
+    border-radius:25px;
+}
+nav{
+    padding:1em 3em;
+}
+nav span#back-btn::before{
+    content:'\276E';
+    margin-right:10px;
+}
+nav span{
+    font-size:3em;
+    color:#FBF3E4;
+}
+
+section{
+    padding:1rem;
+}
+section#city-section{
+/*  */
+}
+#selected-city{
+    font-size:4em;
+    text-align:center;
+    color:#FBF3E4;
+}
+form {
+    padding:1em;
+    padding-top: 0em;
+}
+
+form div {
+    margin:1em auto;
+    width: 50%;
+}
+form div input[type="radio"]{
+    margin-left: 1em;
+}
+form div input[type="radio"],
+form div label{
+    font-size:2em;
+}
+
+form label {
+    color:#fff;
+}
+form input{
+    padding:0.4em;
+    font-size:2em;
+    outline:none;
+    border:none;
+    border:1px solid #3F3351;
+}
+form input[type="text"]{
+    border-radius:0.4em 0 0 0.4em  ;
+}
+form input[type="submit"]{
+    margin-left:0px; 
+    border-radius: 0 0.4em 0.4em 0;
+}
+
+section#city-info img{
+    margin-top:50px;
+}
+section#city-info{
+    background-color:#FBF3E4;
+    border-radius: 20% 20% 15px 15px;
+    padding:0em;
+    font-size:2em;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: 1em;
+}
+section#city-info #extra{
+    width:100%;
+    display: flex;
+}
+section#city-info #extra div#left{
+    border-right: 2px solid grey;
+}
+
+section#city-info #extra div#right .metrics::after{
+    content:'\0025';
+}
+
+section#city-info #extra div#left::before{
+    content: url("https://img.icons8.com/office/40/000000/thermometer.png");
+}
+section#city-info #extra div#right::before{
+    content: url("https://img.icons8.com/office/40/000000/dew-point.png");
+}
+section#city-info #extra>div::before{
+    margin-right: 0.2em;
+}
+section#city-info #extra>div{
+    border-top: 2px solid grey;
+    width:50%;
+    text-align: center; 
+    padding:0.8em;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:0.5em;
+}
+section#city-info .metrics{
+    font-size:1em;
+    font-weight:400;
+}
+section#city-info .metrics-label{
+    font-size:0.6em;
+}
+
+.unit-cel::after{
+    content:"\2103";
+}
+.unit-far::after{
+    content:"\2109";
+}
