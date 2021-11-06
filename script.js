@@ -30,6 +30,9 @@ function manageImgSrc(data){
         case 'Haze': 
         result+="fog-day--v2"
         break;
+        case 'Mist': 
+        result+="external-mist-natural-disaster-photo3ideastudio-flat-photo3ideastudio"
+        break;
         case 'Thunderstorm': 
         result+="storm"
         break;
@@ -46,6 +49,8 @@ function manageImgSrc(data){
         case 'Clouds': 
         result+="clouds"
         break;
+        default: 
+        result+="dust"
     }
 
     return result+".png";
