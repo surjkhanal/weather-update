@@ -1,3 +1,3 @@
 # weather-update
 
-https://surjkhanal.github.io/weather-update/
+https://tosudh.github.io/weather-update/
